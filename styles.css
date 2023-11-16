@@ -4,11 +4,11 @@
 }
 
 body{
-    background-color: lightgrey;            
+    background-color:  rgba(210, 203, 203, 0.159);            
     display: flex;
     margin: 0px;
 }
-
+/*CSS for image sidebar*/
 .img-container
 {
     width: 700px;
@@ -45,10 +45,57 @@ a{
     color: white;
 }
 
-
-.text{
-    align-items: center;
+/*CSS for text and form*/
+.text-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center; 
+    gap: 24px;
+    font-family:Arial, Helvetica, sans-serif;
 }
+.upper{
+    padding-left: 32px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.lower{
+    padding-left: 32px;
+}
+.lower>button{
+    background-color: #596D48;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-bottom: 12px;
+}
+.lower>p{
+    font-weight:bold;
+    font-size: 1.05rem;
+
+}
+
+
+form{
+    background-color: white;
+    padding: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: black;
+}
+form>h2{
+    margin-top: 0px;
+}
+.form{
+    display: flex;
+
+}
+.ele1{
+    display: flex;
+    flex-direction: column;
+}
+
