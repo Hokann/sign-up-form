@@ -22,42 +22,44 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <form action="" method="POST">
+            <section class="main">
             <h2>Let's do this!</h2>
             <div class="form">
                 <div class="col1">
                     <div class="ele1">
-                        <span class="name">FIRST NAME</span>
-                        <input type="text">
+                        <label for="first">FIRST NAME</label> <!--labels allow you to access the form, they're clickable-->
+                        <input type="text" id="first" placeholder="Thor" required>
                     </div>
                     <div class="ele1">
-                        <span class="name">EMAIL</span>
-                        <input type="text">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
                     </div>
                     <div class="ele1">
-                        <span class="name">PASSWORD</span>
-                        <input type="text">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" required>
                     </div>
                 </div>
                 <div class="col2">
                     <div class="ele1">
-                        <span class="name">LAST NAME</span>
-                        <input type="text">
+                        <label for="last">LAST NAME</label>
+                        <input type="text" id="last" placeholder="Odinson" required>
                     </div>
                     <div class="ele1">
-                        <span class="name">PHONE NUMBER</span>
-                        <input type="text">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" id="phone" required>
                     </div>
                     <div class="ele1">
-                        <span class="name">CONFIRM PASSWORD</span>
-                        <input type="text">
+                        <label for="cpassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="cpassword" required>
                     </div>
                 </div>
             </div>
+            </section>
+            <div class="lower">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#" style="text-decoration: none; color: #596D48">Log in</a></p>
+            </div>    
         </form>
-        <div class="lower">
-            <button>Create Account</button>
-            <p>Already have an account? <a href="#" style="text-decoration: none; color: #596D48">Log in</a></p>
-        </div>    
     </div>
 </body>
 </html>
